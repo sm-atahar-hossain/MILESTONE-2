@@ -2,7 +2,7 @@
  /* font-family: "Quicksand", sans-serif; */
  *{
     font-family: Quicksand;
-    margin: 0 10px;
+    margin: 0;
     padding: 0;
     letter-spacing: 0%;
     background-color: white;
@@ -13,6 +13,7 @@
  section{
   background: none;
   margin-top: 10px;
+  margin: 0 10px;
  }
  main{
   background-repeat: repeat-y;
@@ -41,6 +42,7 @@
     border-radius: 10px;
     border: none;
  }
+ 
  /* navbar style */
  .nav{
     display: flex;
@@ -97,6 +99,7 @@
  .hero img{
       width: 310px;
     }
+
    /* curriculum section design */
     .arrow-style{
       font-size: 50px;
@@ -112,7 +115,7 @@
     }
     .curriculum{
       display: grid;
-      row-gap: 30px;
+      gap: 30px;
       grid-template-columns: 1fr 1fr 1fr;
     }
     .curriculum h3{
@@ -256,15 +259,62 @@
       display: none;
     }
 
+     /* footer section design */
+     footer{
+      margin: 0;
+      background-color: rgba(1, 172, 253, 0.6);
+      color: rgba(255, 255, 255, 1);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: auto;
+      padding: 50px;
+     }
+     .footer-logo{
+      display: flex;
+      padding: 0;
+     }
+     .footer-logo >h4{
+      font-size: 24px;
+      padding: 2px;
+     }
+     .footer-logo img{
+      width: 60px;
+      height: 60px;
+      padding: 2px;
+     }
+     .footer-div2,.footer-div3{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+     }
+     .footer-div2 h5, .footer-div3 h5{
+      font-size: 20px;
+     }
+     .footer-div2 li{
+      list-style: none;
+     }
+     .footer-div2 a{
+      text-decoration: none;
+      color: white;
+     }
+     .footer-div3 div{
+      display: flex;
+      gap: 10px;
+     }
+     footer img,h5,p,li,a,ul,div{
+      background: none;
+     }
 
     /* responsive design */
  @media screen and (max-width:920px) {
+  /* nav */
     .nav >ul, .nav button{
         display: none;
     }
     #manu-icon{
       display: block;
     }
+    /* hero */
     .hero{
       display: flex;
       flex-direction: column-reverse;
@@ -279,7 +329,7 @@
     justify-content: center;
     text-align: center;
     }
-
+   /* curriculum */
     .curriculum{
       display: flex;
       flex-direction: column;
@@ -290,6 +340,7 @@
     .curriculum-arrow{
       display: none;
     }
+    /* story */
     .stories{
       display: grid;
       grid-template-columns: 1fr 1fr ;
@@ -299,7 +350,7 @@
       grid-column: 2 span;
     }
     .show{
-      display: block;
+      display:inherit;
     }
     .stories button{
       grid-column: 2 span;
@@ -308,6 +359,12 @@
       grid-row: auto;
       grid-column: auto;
     }
-
+    /* footer */
+    footer{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+     
+     }
 
  }

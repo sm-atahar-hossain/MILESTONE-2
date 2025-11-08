@@ -16,7 +16,6 @@
   margin: 0 10px;
  }
  main{
-  background-repeat: repeat-y;
   background: linear-gradient(rgba(255, 255, 255, 0) ,rgba(255, 244, 220, 0.55));
  }
  .black-btn{
@@ -42,7 +41,6 @@
     border-radius: 10px;
     border: none;
  }
- 
  /* navbar style */
  .nav{
     display: flex;
@@ -99,7 +97,7 @@
  .hero img{
       width: 310px;
     }
-
+    
    /* curriculum section design */
     .arrow-style{
       font-size: 50px;

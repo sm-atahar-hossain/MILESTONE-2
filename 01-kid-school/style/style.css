@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+ /* font-family: "Quicksand", sans-serif; */
+ *{
+    font-family: Quicksand;
+    margin: 0 10px;
+    padding: 0;
+    letter-spacing: 0%;
+    background-color: white;
+ }
+ span{
+   margin: 0;
+ }
+ section{
+  background: none;
+  margin-top: 10px;
+ }
+ main{
+  background-repeat: repeat-y;
+  background: linear-gradient(rgba(255, 255, 255, 0) ,rgba(255, 244, 220, 0.55));
+ }
+ .black-btn{
+   width: 197px;
+   height: 50px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   background: black;
+   border-radius: 8px;
+   color: white;
+   font-size: larger;
+   font-weight: 800;
+ }
+ .btn-style{
+    height: auto;
+    padding: 8px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(254, 163, 1, 1);
+    border-radius: 10px;
+    border: none;
+ }
+ /* navbar style */
+ .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+ }
+ .nav >ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .nav li{
+    list-style: none;
+    padding: 0px 8px;
+ }
+ .nav a{
+    text-decoration: none;
+ }
+ .nav >div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+ }
+ nav h2>{
+    font-size: 32px;
+    font-weight: 700;
+ }
+ #manu-icon{
+   display: none;
+ }
+
+ /* hero section design */
+ .hero{
+   display: grid;
+   grid-template-columns:auto 350px;
+   overflow: hidden;
+ }
+ #hero-text{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+   padding: 10px;
+ }
+ #hero-text>h3{
+   font-size: 56px;
+   font-weight: 700;
+ }
+ #hero-text>p{
+   font-size: 20px;
+ }
+ .hero img{
+      width: 310px;
+    }
+   /* curriculum section design */
+    .arrow-style{
+      font-size: 50px;
+      font-weight: 900;
+      text-align: center;
+      color: white;
+      background-color: rgba(254, 163, 1, 1);
+      border-radius: 100%;
+      margin: 0 10px;
+    }
+    .arrow-bg{
+      background: none;
+    }
+    .curriculum{
+      display: grid;
+      row-gap: 30px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .curriculum h3{
+      grid-column: 1/4;
+      font-size: 40px;
+      text-align: center;
+    }
+    .curriculum-kinder{
+      background: linear-gradient(rgba(222, 245, 255, 1), rgba(255, 255, 255, 0));
+      text-align: center;
+      display: flex;
+      gap: 8px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .curriculum-kinder >p,h4{
+      background: none;
+    }
+    .curriculum-elementary{
+      background: linear-gradient(rgba(255, 244, 220, 1),rgba(255, 255, 255, 0) );
+      text-align: center;
+      display: flex;
+      gap: 8px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border-radius: 10px; 
+    }
+    .curriculum-elementary >p,h4{
+      background: none;
+    }
+    .curriculum-middle{
+      background: linear-gradient(rgba(238, 225, 255, 1),rgba(255, 255, 255, 0) );
+      text-align: center;
+      display: flex;
+      gap: 8px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .curriculum-middle >p,h4{
+      background: none;
+    }
+    .curriculum-arrow{
+      grid-column: 1/4;
+      margin: auto;
+    }
+
+    /* story section design */
+    .stories{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+      gap: 10px;
+    }
+    .stories h2{
+      grid-column: 4 span;
+      text-align: center;
+      padding: 20px;
+      font-size: 40px;
+      font-weight: 700;
+      background: none;
+    }
+    .stories button{
+      grid-column: 4 span;
+      margin: 50px auto;
+    }
+    .story1{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+      border-radius: 20px;
+      grid-row: 2 span;
+      grid-column: 2 span;
+    }
+     .story2,.story3,.story4,.story5{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+      border-radius: 20px;  
+    }
+    .story1 img,.story2 img,.story3 img,.story4 img,.story5 img{
+      width: 100%;
+      margin: 0;
+      border-radius:20px 20px 0px 0px;
+    }
+    .story1 > div,h4,p{
+      padding: 20px;
+    }
+    .story1 h4, .story2 h4,.story3 h4,.story4 h4,.story5 h4{
+      font-size: 24px;
+      font-weight: 800;
+    }
+    .story1 p{
+      font-size: 16px;
+    }
+    .story1 div {
+      width: fit-content;
+      font-size: 12px;
+      padding: 8px 20px;
+      border-radius: 15px;
+      font-weight: 600;
+      background-color:rgba(60, 216, 232, 1);
+      color: white;
+      position: relative;
+      bottom: 40px;
+      left: 2px;
+    }
+    .story2 div, .story3 div,.story4 div,.story5 div {
+      width: fit-content;
+      font-size: 12px;
+      padding: 8px 20px;
+      border-radius: 15px;
+      font-weight: 600;
+      background-color:rgba(149, 178, 38, 1);
+      color: white;
+      position: relative;
+      bottom: 40px;
+      left: 2px;
+    }
+    .story3 div {
+      width: fit-content;
+      font-size: 12px;
+      padding: 8px 20px;
+      border-radius: 15px;
+      font-weight: 600;
+      background-color:rgba(93, 88, 240, 1);
+      color: white;
+      position: relative;
+      bottom: 40px;
+      left: 2px;
+    }
+    .show{
+      display: none;
+    }
+
+
+    /* responsive design */
+ @media screen and (max-width:920px) {
+    .nav >ul, .nav button{
+        display: none;
+    }
+    #manu-icon{
+      display: block;
+    }
+    .hero{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .hero img{
+      width: 100%;
+    }
+   #hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+    .curriculum{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .curriculum-arrow{
+      display: none;
+    }
+    .stories{
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      gap: 10px;
+    }
+     .stories h2{
+      grid-column: 2 span;
+    }
+    .show{
+      display: block;
+    }
+    .stories button{
+      grid-column: 2 span;
+    }
+    .story1{
+      grid-row: auto;
+      grid-column: auto;
+    }
+
+
+ }

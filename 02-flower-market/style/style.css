@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Noto Serif", serif; */
+body{
+    padding: 0;
+    margin: 0;
+}
+.display-none{
+    display: none;
+
+}
+.para-text{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 0;
+    padding: 0;
+}
+.heading-text{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    padding: 12px;
+}
+.section-margin{
+    margin:20px 40px;
+}
+.btn{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgba(233, 90, 8, 1);
+    color: white;
+    border: none;
+}
+
+/* navbar design */
+.navbar{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.navbar img{
+    width: 90px;
+
+}
+.navbar-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:700px;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+/* hero design */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.hero-titel{
+    padding: 10px;
+}
+.hero-titel>h2{
+    font-size: 65px;
+    font-weight: 700;
+}
+.hero-img{
+    width: 40vw;
+}
+
+/* plan design */
+.plan{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.plan-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.plan-item{
+    display: flex;
+    flex-direction: column;
+    background-color: #cbc5c536;
+    gap: 2px;
+}
+.plan-item >img{
+    width: 100%;
+    height: 320px;
+}
+.plan-item p{
+    font-size: 16px;
+}
+
+/* lover section design */
+.lover{
+    margin-top: 50px;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     column-gap: 30px;
+}
+.lover-img{
+    padding: 20px;
+}
+.lover-img img{
+    width: 100%;
+}
+.lover-titel{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.lover-titel > ul{
+    padding-left: 50px;
+    display: grid;
+    gap: 30px;
+}
+
+/* deals section design */
+.deals{
+    display: flex ;
+    flex-direction: column;
+    text-align: center;
+}
+.deals-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
+.deals-items p{
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+}
+.deals-item2 p{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+}
+.deals-items button{
+    border: none;
+    background: none;
+    color: white;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.deals-item2 button{
+    border: none;
+    background: none;
+    color: white;
+    font-size: 22px;
+    text-decoration: underline;
+}
+.deals-item2{
+    grid-row: 1/3;
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+.deals-item1,.deals-item3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover; 
+    border-radius: 10px;
+    width: 40vw;
+    height: 200px;
+}
+
+/* join section design */
+.join{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.join h3{
+    color: white;
+    
+}
+.email-div{
+    display: flex;
+    width: 50vw;
+}
+.email-div input{
+    width: 100%;
+    padding: 20px;
+}
+
+/* footer section design */
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 40px 80px;
+    gap: 20px;
+}
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer li{
+    list-style: none;
+}
+.footer a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+.footer-social{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0px;
+}
+.footer-social img{
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Responsive section */
+@media screen and (max-width:40rem) {
+    .para-text{
+        font-size: 14px;
+    }
+    .heading-text,.hero-titel>h2{
+        font-size: 24px;
+    }
+    .section-margin{
+        margin: 10px 20px;
+    }
+    .display-none{
+        display: inherit;
+    }
+    .navbar-cart ul,.cart-icon{
+        display: none;
+    }
+    .navbar-cart{
+        justify-content: end;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero-titel{
+    margin-top: 20px;
+    }
+    
+    .hero-img{
+        width: 100vw;
+        border-radius: 10px;
+    }
+    .plan-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+    }
+    .lover{
+     grid-template-columns: 1fr;
+    }
+    .deals-items{
+        grid-template-columns: 1fr;
+    }
+
+    .deals-items p{
+        font-size: 20px;
+    }
+    .deals-items button{
+        font-size: 15px;
+    }
+    .deals-item2{
+        grid-row: 3/3;
+        grid-column:1/1;
+    }
+    .deals-item1,.deals-item2,.deals-item3{
+        width: 100%;
+        height: 210px;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+        margin: 0px;
+        gap: 0px;
+    }
+    .footer-social img{
+        width: 30px;
+        height: 30px;
+        gap: 10px;
+    }
+}
